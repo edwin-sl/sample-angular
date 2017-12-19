@@ -1,0 +1,12 @@
+<div *ngIf="note">
+
+  <h2>{{ note.title | uppercase }} Details</h2>
+  <div><span>id: </span>{{note.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="note.content" placeholder="name"/>
+    </label>
+  </div>
+
+    <button (click)="saveNote()">Salvar</button>
+</div>
